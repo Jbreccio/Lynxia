@@ -1,5 +1,3 @@
-#Lixia
-
 **Lynxia** is a system for monitoring the exposure of personal and sensitive data on the web.
 Initially developed for personal use, Lynxia collects mentions of names, emails, CPFs, and other user-defined data, storing the results locally and sending alerts when new occurrences are found.
 
