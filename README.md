@@ -1,36 +1,30 @@
-# Lynxia
+# Lynxia 🚀
 
-**Lynxia** is a system for monitoring the exposure of personal and sensitive data on the web.
-
-Initially developed for personal use, Lynxia collects mentions of names, emails, CPFs, and other user-defined data, storing the results locally and sending alerts when new occurrences are found.
-
----
-
-## 🛠 Main Features
-
-- Monitoring mentions of personal data on the web.
-- Local storage of searches in a SQLite or PostgreSQL database.
-- Alerts via email or Telegram when new mentions are found.
-- Execution logs to track search history.
-- Simple configuration for personal use or client testing.
+**Lynxia** é um sistema de monitoramento e proteção de dados pessoais, com foco em **segurança digital, alertas inteligentes e produtividade**.  
+Inicialmente projetado para uso pessoal, o Lynxia está sendo expandido para se tornar um **micro SaaS** completo e escalável.
 
 ---
 
-## 💻 Technologies Used
+## 🛠 Tecnologias utilizadas
 
-- **Python**: main language for monitoring scripts.
-- **SQLite / PostgreSQL**: database for storing results.
-- **Flask / FastAPI (optional)**: simple web interface. - **Cron (Linux/Armbian)**: scheduling periodic tasks.
-- **Telegram Bot API / SMTP**: sending alerts.
+- **Python 3** → Linguagem principal  
+- **Flask / FastAPI** → Backend e API REST  
+- **SQLite / PostgreSQL** → Banco de dados  
+- **Docker / Docker Compose** → Containers e orquestração  
+- **SMTP / Telegram API / Twilio** → Alertas multicanal (E-mail, Telegram, WhatsApp, SMS)  
+- **ReportLab / Plotly** → Relatórios PDF e gráficos  
+- **Cron / APScheduler** → Agendamento de tarefas  
+- **JWT / OAuth2** → Autenticação segura  
+- **GitHub Projects / Markdown** → Gestão de backlog e Scrum  
 
 ---
 
-## ⚙️ Project Structure
+## ⚡ Estrutura (exemplo reduzido)
 
 ```text
 /lynxia
-├─ src/ # Python scripts (collection, analysis, alerts)
-├─ data/ # Database or CSV files
-├─ logs/ # Execution logs
-├─ config/ # Email, Telegram, etc. settings
-└─ README.md # This file
+ ├─ src/         # Código principal
+ ├─ config/      # Configurações
+ ├─ logs/        # Logs do sistema
+ ├─ docs/        # Documentação
+ └─ scrum/       # Backlog e metas diárias
